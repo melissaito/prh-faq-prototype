@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PruittHealth — Resource Hub</title>
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/asp4cvz.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="site-header__inner">
+        <a class="logo-link" href="/" aria-label="PruittHealth home">
+          <img
+            src="images/logo.svg"
+            alt=""
+            width="219"
+            height="61"
+            decoding="async"
+          />
+        </a>
+
+        <nav
+          class="nav-desktop"
+          id="nav-desktop"
+          aria-label="Main navigation"
+          aria-hidden="true"
+        >
+          <ul class="nav-desktop__list">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                id="nav-patients"
+                data-dropdown="patients"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-patients"
+              >
+                Patients &amp; Families
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div
+                class="dropdown-panel"
+                id="dropdown-patients"
+                role="region"
+                aria-labelledby="nav-patients"
+                hidden
+              >
+                <p>
+                  Placeholder menu for Patients &amp; Families. Replace with links from the
+                  design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                id="nav-services"
+                data-dropdown="services"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-services"
+              >
+                Our Services
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div
+                class="dropdown-panel"
+                id="dropdown-services"
+                role="region"
+                aria-labelledby="nav-services"
+                hidden
+              >
+                <p>
+                  Placeholder menu for Our Services. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                id="nav-company"
+                data-dropdown="company"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-company"
+              >
+                Our Company
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div
+                class="dropdown-panel"
+                id="dropdown-company"
+                role="region"
+                aria-labelledby="nav-company"
+                hidden
+              >
+                <p>
+                  Placeholder menu for Our Company. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                id="nav-resources"
+                data-dropdown="resources"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="dropdown-resources"
+              >
+                Resources
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div
+                class="dropdown-panel"
+                id="dropdown-resources"
+                role="region"
+                aria-labelledby="nav-resources"
+                hidden
+              >
+                <p>
+                  Placeholder menu for Resources. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-plain" href="#careers">Join Our Team</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="cta" href="#find-care">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+              fill="currentColor"
+            />
+          </svg>
+          Find Care Near You
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <span class="menu-toggle__icon" aria-hidden="true">≡</span>
+        </button>
+      </div>
+
+      <div class="nav-mobile" id="mobile-menu" aria-hidden="true">
+        <nav id="mobile-nav-inner" aria-label="Main navigation" aria-hidden="true">
+          <ul class="nav-mobile__list">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                data-dropdown="patients"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Patients &amp; Families
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div class="dropdown-panel">
+                <p>
+                  Placeholder menu for Patients &amp; Families. Replace with links from the
+                  design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                data-dropdown="services"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Our Services
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div class="dropdown-panel">
+                <p>
+                  Placeholder menu for Our Services. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                data-dropdown="company"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Our Company
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div class="dropdown-panel">
+                <p>
+                  Placeholder menu for Our Company. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav-trigger"
+                data-dropdown="resources"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Resources
+                <span class="nav-chevron" aria-hidden="true"
+                  ><img
+                    class="nav-chevron__icon"
+                    src="images/Controls-carat-right.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                /></span>
+              </button>
+              <div class="dropdown-panel">
+                <p>
+                  Placeholder menu for Resources. Replace with links from the design system.
+                </p>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-plain" href="#careers">Join Our Team</a>
+            </li>
+          </ul>
+          <a class="cta nav-mobile-cta" href="#find-care">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                fill="currentColor"
+              />
+            </svg>
+            Find Care Near You
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-main" tabindex="-1">
+      <section class="faq-hero" aria-labelledby="faq-hero-heading">
+        <div class="faq-hero__card">
+          <div class="faq-hero__left">
+            <h1 id="faq-hero-heading" class="faq-hero__title">
+              Frequently Asked Questions
+            </h1>
+            <ul class="faq-hero__list">
+              <li>
+                <a
+                  href="#faq-q-typical-day"
+                  class="faq-hero__row"
+                  aria-label="Go to FAQ: What does a typical day look like?"
+                >
+                  <span class="faq-hero__q">What does a typical day look like?</span>
+                  <span class="faq-hero__arrow" aria-hidden="true"
+                    ><img
+                      class="faq-hero__arrow-img"
+                      src="images/Icon-arrow-right.svg"
+                      alt=""
+                      width="16"
+                      height="16"
+                      decoding="async"
+                  /></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq-q-medicare-services"
+                  class="faq-hero__row"
+                  aria-label="Go to FAQ: Does Medicare cover services?"
+                >
+                  <span class="faq-hero__q">Does Medicare cover services?</span>
+                  <span class="faq-hero__arrow" aria-hidden="true"
+                    ><img
+                      class="faq-hero__arrow-img"
+                      src="images/Icon-arrow-right.svg"
+                      alt=""
+                      width="16"
+                      height="16"
+                      decoding="async"
+                  /></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq-q-safety-ensured"
+                  class="faq-hero__row"
+                  aria-label="Go to FAQ: How is safety ensured?"
+                >
+                  <span class="faq-hero__q">How is safety ensured?</span>
+                  <span class="faq-hero__arrow" aria-hidden="true"
+                    ><img
+                      class="faq-hero__arrow-img"
+                      src="images/Icon-arrow-right.svg"
+                      alt=""
+                      width="16"
+                      height="16"
+                      decoding="async"
+                  /></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq-q-care-types"
+                  class="faq-hero__row"
+                  aria-label="Go to FAQ: What types of care does PruittHealth offer?"
+                >
+                  <span class="faq-hero__q">What types of care does PruittHealth offer?</span>
+                  <span class="faq-hero__arrow" aria-hidden="true"
+                    ><img
+                      class="faq-hero__arrow-img"
+                      src="images/Icon-arrow-right.svg"
+                      alt=""
+                      width="16"
+                      height="16"
+                      decoding="async"
+                  /></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="faq-hero__right">
+            <img
+              class="faq-hero__photo"
+              src="https://www.figma.com/api/mcp/asset/4049bd14-a6c7-4a66-a5eb-e32f5ccb1ff3"
+              alt="An elderly woman and a younger man smiling together in a warm embrace, representing family-centered care."
+              width="800"
+              height="600"
+              decoding="async"
+            />
+          </div>
+
+          <div class="faq-hero__search-wrap">
+            <form
+              class="faq-hero__search"
+              id="faq-hero-search-form"
+              role="search"
+              action="#"
+              method="get"
+            >
+              <input
+                type="search"
+                id="faq-hero-search-input"
+                class="faq-hero__search-input"
+                name="q"
+                placeholder="Enter your search here"
+                aria-label="Search FAQs"
+                autocomplete="off"
+              />
+              <button type="submit" class="faq-hero__search-submit" aria-label="Submit search">
+                <svg
+                  class="faq-hero__search-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2" />
+                  <path
+                    d="M16 16L20 20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-answers" id="faq-content">
+        <div class="faq-answers__layout">
+          <div class="faq-answers__section-picker" id="faq-section-picker">
+            <button
+              type="button"
+              class="faq-answers__section-picker-btn"
+              aria-expanded="false"
+              aria-controls="faq-section-picker-panel"
+              aria-label="Jump to section"
+            >
+              <span class="faq-answers__section-picker-label">All Sections</span>
+              <span class="faq-answers__section-picker-chevron" aria-hidden="true"></span>
+            </button>
+            <ul
+              class="faq-answers__section-picker-panel"
+              id="faq-section-picker-panel"
+              role="list"
+              hidden
+            >
+              <li><a href="#faq-group-assisted-living" class="faq-answers__section-picker-link">Assisted Living</a></li>
+              <li><a href="#faq-group-skilled-nursing" class="faq-answers__section-picker-link">Skilled Nursing</a></li>
+              <li><a href="#faq-group-personal-care" class="faq-answers__section-picker-link">Personal Care</a></li>
+              <li><a href="#faq-group-home-health" class="faq-answers__section-picker-link">Home Health</a></li>
+              <li><a href="#faq-group-hospice" class="faq-answers__section-picker-link">Hospice &amp; Palliative Care</a></li>
+              <li><a href="#faq-group-about-pruitthealth" class="faq-answers__section-picker-link">About PruittHealth Care</a></li>
+              <li><a href="#faq-group-payment-insurance" class="faq-answers__section-picker-link">Payment &amp; Insurance</a></li>
+              <li><a href="#faq-group-daily-life" class="faq-answers__section-picker-link">Daily Life &amp; Services</a></li>
+              <li><a href="#faq-group-safety-oversight" class="faq-answers__section-picker-link">Safety &amp; Medical Oversight</a></li>
+              <li><a href="#faq-group-family-caregiver" class="faq-answers__section-picker-link">Family &amp; Caregiver</a></li>
+            </ul>
+          </div>
+
+          <aside class="faq-answers__sidebar">
+            <nav class="faq-answers__nav" aria-label="FAQ sections">
+              <ul class="faq-answers__nav-list">
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Assisted Living</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-al-medicare"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare pay for assisted living?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-al-community"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What is a senior living community?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-al-move-in"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Who can move into a senior living community?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-al-locations"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What assisted living locations are available through PruittHealth?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Skilled Nursing</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-sn-medicaid"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicaid cover skilled nursing facilities?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-sn-medicare"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare cover skilled nursing facilities?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-sn-nursing-home"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Is a skilled nursing facility a nursing home?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-sn-cost"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How much does a skilled nursing facility cost?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-sn-doctors"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Do skilled nursing facilities have doctors?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Personal Care</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-pc-medicare"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare cover in-home personal care?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-pc-respite"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What is respite care?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Home Health</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-hh-medicare"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare cover home health care?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-hh-qualify"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Who qualifies for home health services?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-hh-nurses"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What do home health nurses do?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-hh-medicaid"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Will Medicaid pay for home health care?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Hospice &amp; Palliative Care</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-hos-medicare"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare pay for hospice?</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#faq-q-hos-what" class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What does hospice do?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-hos-choose"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Can someone choose hospice themselves?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-hos-palliative"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Is palliative care the same as hospice?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">About PruittHealth Care</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-care-types"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What types of care does PruittHealth offer?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-medication"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Do you help with medication management?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-short-stays"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does PruittHealth offer short-term stays?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-level-care"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How is level of care determined?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-level-change"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What happens if my level of care changes?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-transportation"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Do you offer transportation?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-ab-find-doctor"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Can you help us find a doctor?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Payment &amp; Insurance</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-pay-insurance-accept"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What insurance does PruittHealth accept?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-medicare-services"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Does Medicare cover services?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-pay-out-of-pocket"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What out-of-pocket costs should I expect?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-pay-options"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How do payment options differ?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-pay-billing"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Will billing be combined or separate?</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#faq-q-pay-va" class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How do I check VA benefits eligibility?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-pay-financial-planning"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Who helps with financial planning?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Daily Life &amp; Services</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-typical-day"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What does a typical day look like?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-dl-personal-care"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How is personal care handled?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-dl-therapy"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How often is therapy provided?</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#faq-q-dl-meals" class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Are meals included?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-dl-medications"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How are medications managed?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-dl-family-planning"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Can families participate in care planning?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-dl-activities"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What activities are offered?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="faq-answers__nav-item--expand">
+                  <details class="faq-answers__nav-details">
+                    <summary class="faq-answers__nav-summary">Safety &amp; Medical Oversight</summary>
+                    <ul class="faq-answers__nav-sublist">
+                      <li>
+                        <a
+                          href="#faq-q-safety-ensured"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How is safety ensured?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-fall"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Are fall-prevention measures in place?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-emergency"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How are emergencies handled?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-staff"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What staff are involved in care?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-ratios"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >What are staffing ratios?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-training"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >How are caregivers trained?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-physician"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Is a physician available?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#faq-q-safety-coordinator"
+                          class="faq-answers__nav-link faq-answers__nav-link--sub"
+                          >Who coordinates care?</a
+                        >
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <a href="#faq-group-family-caregiver" class="faq-answers__nav-link"
+                    >Family &amp; Caregiver</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="faq-answers__content">
+            <article class="faq-answers__group" id="faq-group-assisted-living">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Assisted Living</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-al-medicare"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare assisted living pay coverage"
+                >
+                  <summary class="faq-group__summary">Does Medicare pay for assisted living?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      No. Medicare does not cover assisted living costs. It only covers medical services
+                      (doctor visits, hospital stays, limited skilled nursing). Assisted living is typically paid
+                      out-of-pocket or through long-term care insurance.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-al-community"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="senior living community independent memory care"
+                >
+                  <summary class="faq-group__summary">What is a senior living community?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      A residential environment for older adults offering housing, meals, social activities, and
+                      varying care levels (independent living, assisted living, memory care).
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-al-move-in"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="move in eligibility age assisted living"
+                >
+                  <summary class="faq-group__summary">Who can move into a senior living community?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Typically adults 55+ who want a supportive living environment. Residents may be independent
+                      or require assistance.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-al-locations"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="pruitthealth locations pruittplace finder"
+                >
+                  <summary class="faq-group__summary"
+                    >What assisted living locations are available through PruittHealth?</summary
+                  >
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      PruittHealth offers multiple communities, including PruittPlace locations. A location finder
+                      helps users explore options.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-skilled-nursing">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Skilled Nursing</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-sn-medicaid"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicaid skilled nursing facilities"
+                >
+                  <summary class="faq-group__summary">Does Medicaid cover skilled nursing facilities?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes. Medicaid covers most nursing home costs for eligible individuals. Coverage varies by
+                      state and requires a certified facility.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-sn-medicare"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare skilled nursing facilities"
+                >
+                  <summary class="faq-group__summary">Does Medicare cover skilled nursing facilities?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <p>Yes, under Part A (up to 100 days per benefit period):</p>
+                      <ul>
+                        <li>Days 1–20: Fully covered</li>
+                        <li>Days 21–100: Covered except co-insurance</li>
+                      </ul>
+                      <p>Eligibility requires:</p>
+                      <ul>
+                        <li>3-day hospital stay</li>
+                        <li>Admission within 30 days</li>
+                        <li>Available Part A days</li>
+                        <li>Covered diagnosis</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-sn-nursing-home"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="skilled nursing nursing home"
+                >
+                  <summary class="faq-group__summary">Is a skilled nursing facility a nursing home?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes. These facilities provide 24/7 medical care and rehabilitation for short- and
+                      long-term needs.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-sn-cost"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="skilled nursing facility cost"
+                >
+                  <summary class="faq-group__summary">How much does a skilled nursing facility cost?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <p>Varies by payment type:</p>
+                      <ul>
+                        <li><strong>Medicaid:</strong> Covers most costs (if eligible)</li>
+                        <li><strong>Medicare:</strong> Short-term coverage</li>
+                        <li><strong>Private Pay:</strong> Out-of-pocket</li>
+                        <li><strong>Medigap:</strong> Covers gaps in Medicare</li>
+                        <li><strong>Long-term care insurance:</strong> Policy dependent</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-sn-doctors"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="skilled nursing doctors physicians"
+                >
+                  <summary class="faq-group__summary">Do skilled nursing facilities have doctors?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes. Care is coordinated with physicians, and staff follow personalized care plans including
+                      services, frequency, and medical needs.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-personal-care">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Personal Care</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-pc-medicare"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare in-home care seniors"
+                >
+                  <summary class="faq-group__summary">Does Medicare cover in-home personal care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      No. Medicare does not cover non-medical care (bathing, dressing, meals). It may cover medical
+                      home care under specific conditions.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pc-respite"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="respite care"
+                >
+                  <summary class="faq-group__summary">What is respite care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Temporary care that gives caregivers a break. Can occur at home or in a facility and
+                      includes daily assistance and medical support.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-home-health">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Home Health</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-hh-medicare"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare home health"
+                >
+                  <summary class="faq-group__summary">Does Medicare cover home health care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <p>Yes, if:</p>
+                      <ul>
+                        <li>A doctor certifies need</li>
+                        <li>Patient is homebound</li>
+                        <li>Skilled services are required</li>
+                      </ul>
+                      <p>Covers nursing, therapy, and supplies (not 24/7 care).</p>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-hh-qualify"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="home health qualify eligibility"
+                >
+                  <summary class="faq-group__summary">Who qualifies for home health services?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <ul>
+                        <li>Under physician care</li>
+                        <li>Needs skilled services</li>
+                        <li>Homebound</li>
+                        <li>Has qualifying insurance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-hh-nurses"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="home health nurses"
+                >
+                  <summary class="faq-group__summary">What do home health nurses do?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <ul>
+                        <li>Administer medications</li>
+                        <li>Provide wound care</li>
+                        <li>Monitor health</li>
+                        <li>Educate patients/families</li>
+                        <li>Coordinate with providers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-hh-medicaid"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicaid home health"
+                >
+                  <summary class="faq-group__summary">Will Medicaid pay for home health care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes, depending on state eligibility and coverage rules.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-hospice">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Hospice &amp; Palliative Care</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-hos-medicare"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare hospice pay"
+                >
+                  <summary class="faq-group__summary">Does Medicare pay for hospice?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes, under Part A for patients with a life expectancy of 6 months or less. Covers comfort
+                      care, medications, and support services.
+                    </div>
+                  </div>
+                </details>
+                <details id="faq-q-hos-what" class="faq-item faq-group__item" data-faq-keywords="hospice services">
+                  <summary class="faq-group__summary">What does hospice do?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <p>Focuses on comfort and quality of life:</p>
+                      <ul>
+                        <li>Pain management</li>
+                        <li>Emotional/spiritual support</li>
+                        <li>Daily care assistance</li>
+                        <li>Family counseling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-hos-choose"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="hospice self elect"
+                >
+                  <summary class="faq-group__summary">Can someone choose hospice themselves?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Yes, if a doctor certifies eligibility.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-hos-palliative"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="palliative hospice difference"
+                >
+                  <summary class="faq-group__summary">Is palliative care the same as hospice?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      <p>No:</p>
+                      <ul>
+                        <li><strong>Palliative care:</strong> Any stage, can include treatment</li>
+                        <li><strong>Hospice:</strong> End-of-life care only</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-about-pruitthealth">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">About PruittHealth Care</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-care-types"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="types of care services"
+                >
+                  <summary class="faq-group__summary">What types of care does PruittHealth offer?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-medication"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medication management"
+                >
+                  <summary class="faq-group__summary">Do you help with medication management?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-short-stays"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="short-term stays respite"
+                >
+                  <summary class="faq-group__summary">Does PruittHealth offer short-term stays?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-level-care"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="level of care assessment"
+                >
+                  <summary class="faq-group__summary">How is level of care determined?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-level-change"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="level of care change"
+                >
+                  <summary class="faq-group__summary">What happens if my level of care changes?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-transportation"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="transportation"
+                >
+                  <summary class="faq-group__summary">Do you offer transportation?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-ab-find-doctor"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="doctor physician referral"
+                >
+                  <summary class="faq-group__summary">Can you help us find a doctor?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-payment-insurance">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Payment &amp; Insurance</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-pay-insurance-accept"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="insurance accept plans"
+                >
+                  <summary class="faq-group__summary">What insurance does PruittHealth accept?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-medicare-services"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medicare skilled nursing home health hospice coverage"
+                >
+                  <summary class="faq-group__summary">Does Medicare cover services?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pay-out-of-pocket"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="out of pocket costs"
+                >
+                  <summary class="faq-group__summary">What out-of-pocket costs should I expect?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pay-options"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="private pay long-term care insurance medicaid"
+                >
+                  <summary class="faq-group__summary">How do payment options differ?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pay-billing"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="billing invoice therapy"
+                >
+                  <summary class="faq-group__summary">Will billing be combined or separate?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pay-va"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="VA benefits veterans"
+                >
+                  <summary class="faq-group__summary">How do I check VA benefits eligibility?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-pay-financial-planning"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="financial options counselor"
+                >
+                  <summary class="faq-group__summary">Who helps with financial planning?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-daily-life">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Daily Life &amp; Services</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-typical-day"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="typical day routine residents"
+                >
+                  <summary class="faq-group__summary">What does a typical day look like?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-personal-care"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="bathing grooming dressing personal care"
+                >
+                  <summary class="faq-group__summary">How is personal care handled?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-therapy"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="therapy frequency schedule"
+                >
+                  <summary class="faq-group__summary">How often is therapy provided?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-meals"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="meals snacks hydration nutrition"
+                >
+                  <summary class="faq-group__summary">Are meals included?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-medications"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="medications administration"
+                >
+                  <summary class="faq-group__summary">How are medications managed?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-family-planning"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="family care planning meetings"
+                >
+                  <summary class="faq-group__summary">Can families participate in care planning?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-dl-activities"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="activities social programs"
+                >
+                  <summary class="faq-group__summary">What activities are offered?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-safety-oversight">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Safety &amp; Medical Oversight</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-safety-ensured"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="safety protocols quality"
+                >
+                  <summary class="faq-group__summary">How is safety ensured?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-fall"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="fall prevention"
+                >
+                  <summary class="faq-group__summary">Are fall-prevention measures in place?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-emergency"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="emergency medical care"
+                >
+                  <summary class="faq-group__summary">How are emergencies handled?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-staff"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="clinicians caregivers team"
+                >
+                  <summary class="faq-group__summary">What staff are involved in care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-ratios"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="staff ratio"
+                >
+                  <summary class="faq-group__summary">What are staffing ratios?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-training"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="training CNAs nurses therapists"
+                >
+                  <summary class="faq-group__summary">How are caregivers trained?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-physician"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="physician nurse practitioner on call"
+                >
+                  <summary class="faq-group__summary">Is a physician available?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+                <details
+                  id="faq-q-safety-coordinator"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="care coordination interdisciplinary"
+                >
+                  <summary class="faq-group__summary">Who coordinates care?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="faq-answers__group" id="faq-group-family-caregiver">
+              <header class="faq-answers__group-header">
+                <span class="faq-answers__group-label">Family &amp; Caregiver</span>
+                <a href="#" class="faq-answers__group-action">View Service Page
+                  <span class="faq-answers__group-action-arrow">
+                    <img
+                    class="faq-answers__group-action-icon"
+                    src="images/Icon-arrow-right-primary.svg"
+                    alt=""
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    />
+                  </span></a>
+              </header>
+              <div class="faq-answers__group-accordions">
+                <details
+                  id="faq-q-nemo-1"
+                  class="faq-item faq-group__item"
+                  data-faq-keywords="lorem ipsum placeholder"
+                >
+                  <summary class="faq-group__summary">Nemo enim ipsam voluptatem quia voluptas sit?</summary>
+                  <div class="faq-group__body-wrap">
+                    <div class="faq-item__body faq-group__body">
+                      Your local PruittHealth team can provide details tailored to your situation.
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-intro" aria-label="Introduction">
+        <h2>FAQ page prototype for PruittHealth</h2>
+      </section>
+    </main>
+
+    <button type="button" class="back-to-top" aria-hidden="true" tabindex="-1">
+      <img
+        class="back-to-top__icon"
+        src="images/Icon-arrow-right-primary.svg"
+        alt=""
+        width="22"
+        height="22"
+        decoding="async"
+        aria-hidden="true"
+      />
+      <span class="back-to-top__label">Back to top</span>
+    </button>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
