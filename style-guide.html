@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRH — Style guide</title>
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/kwl5nzl.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="style-guide-body">
+    <div class="style-guide">
+      <header class="style-guide__masthead">
+        <a class="style-guide__nav-back" href="index.html">← Resource Hub prototype</a>
+        <h1 class="style-guide__title header-large">Style guide</h1>
+        <p class="style-guide__lede body-medium">
+          PRH-com design tokens: <strong>colors</strong> (CSS variables below) and <strong>typography</strong>
+          (utility classes with size / line-height / weight). Includes the <code>.eyebrow</code> overline style.
+        </p>
+      </header>
+
+      <section class="style-guide__section" aria-labelledby="sg-colors-heading">
+        <h2 id="sg-colors-heading" class="style-guide__section-heading header-small-bold">Colors / PRH-com</h2>
+        <p class="style-guide__section-lede body-medium">
+          Solid fills from <code>:root</code>. Use <code>var(--color-…)</code> in CSS instead of hex values.
+        </p>
+        <div class="style-guide__color-grid" role="list">
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-dark-green)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Dark green</p>
+              <p class="style-guide__color-token">--color-dark-green</p>
+              <p class="style-guide__color-hex">#0A4540</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-primary)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Primary</p>
+              <p class="style-guide__color-token">--color-primary</p>
+              <p class="style-guide__color-hex">#004C46</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-medium-green-01)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Medium green 01</p>
+              <p class="style-guide__color-token">--color-medium-green-01</p>
+              <p class="style-guide__color-hex">#376F6B</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-medium-green-02)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Medium green 02</p>
+              <p class="style-guide__color-token">--color-medium-green-02</p>
+              <p class="style-guide__color-hex">#99B9AD</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-medium-green-03)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Medium green 03</p>
+              <p class="style-guide__color-token">--color-medium-green-03</p>
+              <p class="style-guide__color-hex">#CAD9D5</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-medium-green-04)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Medium green 04</p>
+              <p class="style-guide__color-token">--color-medium-green-04</p>
+              <p class="style-guide__color-hex">#D7E2DF</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-light-green)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Light green</p>
+              <p class="style-guide__color-token">--color-light-green</p>
+              <p class="style-guide__color-hex">#E5EDEB</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-ultra-light-green)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Ultra light green</p>
+              <p class="style-guide__color-token">--color-ultra-light-green</p>
+              <p class="style-guide__color-hex">#F3F8F7</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch style-guide__color-swatch--bordered"
+              style="background-color: var(--color-base-white)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Base white</p>
+              <p class="style-guide__color-token">--color-base-white</p>
+              <p class="style-guide__color-hex">#FFFFFF</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-content)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Content</p>
+              <p class="style-guide__color-token">--color-content</p>
+              <p class="style-guide__color-hex">#535353</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-utility-grey)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Utility grey</p>
+              <p class="style-guide__color-token">--color-utility-grey</p>
+              <p class="style-guide__color-hex">#868686</p>
+            </div>
+          </article>
+          <article class="style-guide__color-card" role="listitem">
+            <div
+              class="style-guide__color-swatch"
+              style="background-color: var(--color-base-black)"
+              aria-hidden="true"
+            ></div>
+            <div class="style-guide__color-meta">
+              <p class="style-guide__color-name">Base black</p>
+              <p class="style-guide__color-token">--color-base-black</p>
+              <p class="style-guide__color-hex">#030303</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="style-guide__subsection-heading header-xs-bold">Derived — black alpha</h3>
+        <p class="style-guide__section-lede body-medium">
+          <code>color-mix</code> on <code>--color-base-black</code> for shadows, borders, and overlays.
+        </p>
+        <div class="style-guide__alpha-grid" role="list">
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-4)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-4</p>
+            <p class="style-guide__color-note">4%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-5)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-5</p>
+            <p class="style-guide__color-note">5%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-6)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-6</p>
+            <p class="style-guide__color-note">6%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-8)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-8</p>
+            <p class="style-guide__color-note">8%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-10)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-10</p>
+            <p class="style-guide__color-note">10%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-12)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-12</p>
+            <p class="style-guide__color-note">12%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-15)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-15</p>
+            <p class="style-guide__color-note">15%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-19)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-19</p>
+            <p class="style-guide__color-note">19%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-29)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-29</p>
+            <p class="style-guide__color-note">29%</p>
+          </article>
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div class="style-guide__alpha-swatch" style="background: var(--color-black-alpha-30)"></div>
+            <p class="style-guide__color-token">--color-black-alpha-30</p>
+            <p class="style-guide__color-note">30%</p>
+          </article>
+        </div>
+
+        <h3 class="style-guide__subsection-heading header-xs-bold">Derived — lines</h3>
+        <div class="style-guide__alpha-grid style-guide__alpha-grid--lines" role="list">
+          <article class="style-guide__alpha-chip" role="listitem">
+            <div
+              class="style-guide__alpha-swatch"
+              style="background: var(--color-line-hairline)"
+            ></div>
+            <p class="style-guide__color-token">--color-line-hairline</p>
+            <p class="style-guide__color-note">5% black on white</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="style-guide__section" aria-labelledby="sg-eyebrow-heading">
+        <h2 id="sg-eyebrow-heading" class="style-guide__section-heading header-small-bold">Eyebrow</h2>
+        <div class="style-guide__grid">
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.eyebrow</p>
+            <p class="style-guide__sample eyebrow">Assisted living</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">12px / 14px (116.667%)</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">420 <span class="style-guide__token-ref">(--type-eyebrow-weight)</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="style-guide__section" aria-labelledby="sg-display-heading">
+        <h2 id="sg-display-heading" class="style-guide__section-heading header-small-bold">Display</h2>
+        <div class="style-guide__grid">
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.display-large</p>
+            <p class="style-guide__sample style-guide__sample--truncate display-large">Ag</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">104px / 110px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.display-medium</p>
+            <p class="style-guide__sample display-medium">Ag</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">72px / 80px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.display-small</p>
+            <p class="style-guide__sample display-small">Ag</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">64px / 70px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="style-guide__section" aria-labelledby="sg-header-heading">
+        <h2 id="sg-header-heading" class="style-guide__section-heading header-small-bold">Header</h2>
+        <div class="style-guide__grid">
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-large</p>
+            <p class="style-guide__sample header-large">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">54px / 65px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-medium</p>
+            <p class="style-guide__sample header-medium">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">48px / 58px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-small</p>
+            <p class="style-guide__sample header-small">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">36px / 46px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-small-bold</p>
+            <p class="style-guide__sample header-small-bold">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">36px / 46px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-xs</p>
+            <p class="style-guide__sample header-xs">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">24px / 34px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.header-xs-bold</p>
+            <p class="style-guide__sample header-xs-bold">Family-centered care starts with clear answers.</p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">24px / 31px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="style-guide__section" aria-labelledby="sg-body-heading">
+        <h2 id="sg-body-heading" class="style-guide__section-heading header-small-bold">Body</h2>
+        <div class="style-guide__grid">
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-xl</p>
+            <p class="style-guide__sample body-xl">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">24px / 32px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-xl-bold</p>
+            <p class="style-guide__sample body-xl-bold">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">24px / 32px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-large</p>
+            <p class="style-guide__sample body-large">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">22px / 30px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-large-bold</p>
+            <p class="style-guide__sample body-large-bold">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">22px / 30px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-medium</p>
+            <p class="style-guide__sample body-medium">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">18px / 26px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-medium-bold</p>
+            <p class="style-guide__sample body-medium-bold">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">18px / 26px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">450</span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-small</p>
+            <p class="style-guide__sample body-small">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">14px / 18px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+          <article class="style-guide__row">
+            <p class="style-guide__meta">.body-xs</p>
+            <p class="style-guide__sample body-xs">
+              The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+            <div class="style-guide__specs">
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Size / line-height</span>
+                <span class="style-guide__spec-v">12px / 14px</span>
+              </div>
+              <div class="style-guide__spec">
+                <span class="style-guide__spec-k">Weight</span>
+                <span class="style-guide__spec-v">390 <span class="style-guide__token-ref">(--type-body-weight)</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
