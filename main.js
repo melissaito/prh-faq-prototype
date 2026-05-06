@@ -9,7 +9,7 @@
   /* ------------------------------ Navigation ------------------------------ */
 
   const header = document.getElementById("site-header");
-  const mqDesktop = window.matchMedia("(min-width: 1169px)");
+  const mqDesktop = window.matchMedia("(min-width: 1221px)");
   const navDesktop = document.getElementById("nav-desktop");
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileNavInner = document.getElementById("mobile-nav-inner");
