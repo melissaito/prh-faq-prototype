@@ -425,7 +425,7 @@
               class="faq-hero__search"
               id="faq-hero-search-form"
               role="search"
-              action="#"
+              action=""
               method="get"
             >
               <input
@@ -434,10 +434,15 @@
                 class="faq-hero__search-input"
                 name="q"
                 placeholder="Enter your search here"
-                aria-label="Search FAQs"
+                aria-label="Search FAQs (preview only)"
                 autocomplete="off"
               />
-              <button type="submit" class="faq-hero__search-submit" aria-label="Submit search">
+              <button
+                type="button"
+                class="faq-hero__search-submit"
+                tabindex="-1"
+                aria-hidden="true"
+              >
                 <svg
                   class="faq-hero__search-icon"
                   viewBox="0 0 24 24"

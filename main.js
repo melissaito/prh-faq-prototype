@@ -236,52 +236,13 @@
 
   /* ------------------------------ FAQ hero ------------------------------ */
 
-  function filterFAQ(query) {
-    const items = document.querySelectorAll(".faq-item");
-    const q = query.trim().toLowerCase();
-
-    items.forEach(function (item) {
-      item.classList.remove("faq-item--match");
-      if (!q) {
-        item.classList.remove("faq-item--hidden");
-        return;
-      }
-
-      const summary = item.querySelector("summary");
-      const body = item.querySelector(".faq-item__body");
-      const keywords = (item.getAttribute("data-faq-keywords") || "").toLowerCase();
-      const text = (
-        (summary && summary.textContent) +
-        " " +
-        (body && body.textContent) +
-        " " +
-        keywords
-      ).toLowerCase();
-
-      if (text.includes(q)) {
-        item.classList.remove("faq-item--hidden");
-        item.classList.add("faq-item--match");
-      } else {
-        item.classList.add("faq-item--hidden");
-      }
-    });
-  }
-
+  /** Hero search is UI-only: typing and clear allowed; no filtering or navigation. */
   function initFAQSearch() {
     const form = document.getElementById("faq-hero-search-form");
-    const input = document.getElementById("faq-hero-search-input");
-    if (!form || !input) return;
+    if (!form) return;
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      filterFAQ(input.value);
-      const firstVisible = document.querySelector(".faq-item:not(.faq-item--hidden)");
-      if (firstVisible) {
-        firstVisible.scrollIntoView({
-          behavior: reduceMotion ? "auto" : "smooth",
-          block: "start",
-        });
-      }
     });
   }
 

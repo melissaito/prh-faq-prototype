@@ -873,8 +873,9 @@ body.is-mobile-menu-open {
   border: none;
   background: transparent;
   font-family: var(--font-sans);
-  font-size: var(--type-header-small-size);
-  line-height: var(--type-header-small-line-height);
+  /* Slightly smaller than header-small while staying in scale */
+  font-size: calc(var(--type-header-small-size) * 0.875);
+  line-height: calc(var(--type-header-small-line-height) * 0.87);
   font-weight: 390;
   color: var(--color-utility-grey);
 }
@@ -906,18 +907,12 @@ body.is-mobile-menu-open {
   border-radius: 50%;
   background: transparent;
   color: var(--color-primary);
-  cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  cursor: default;
 }
 
-.faq-hero__search-submit:hover {
-  opacity: 0.85;
-  transform: scale(1.05);
-}
-
+.faq-hero__search-submit:hover,
 .faq-hero__search-submit:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+  outline: none;
 }
 
 .faq-hero__search-icon {
@@ -1190,13 +1185,21 @@ body:has(#site-header.is-scroll-hidden) .faq-answers__section-picker {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Top-level links only: thin right-pointing caret (inactive), vertically centered */
+/* Top-level links only (e.g. “Family & Caregiver”): match expand-row summary styling */
 .faq-answers__nav-list > li:not(.faq-answers__nav-item--expand) > .faq-answers__nav-link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  padding-right: 1rem;
+  padding: 16px 0.75rem;
+  padding-right: 16px;
+  font-weight: 450;
+  border-radius: 0;
+}
+
+.faq-answers__nav-list > li:not(.faq-answers__nav-item--expand) > .faq-answers__nav-link:hover,
+.faq-answers__nav-list > li:not(.faq-answers__nav-item--expand) > .faq-answers__nav-link:focus-visible {
+  border-radius: 6px;
 }
 
 .faq-answers__nav-list > li:not(.faq-answers__nav-item--expand) > .faq-answers__nav-link::after {
@@ -1218,6 +1221,7 @@ body:has(#site-header.is-scroll-hidden) .faq-answers__section-picker {
 
 /* Selected top-level row */
 .faq-answers__nav-list > li:not(.faq-answers__nav-item--expand) > .faq-answers__nav-link.is-active {
+  border-radius: 6px;
   background: var(--faq-nav-active-bg);
   color: var(--color-primary);
 }
