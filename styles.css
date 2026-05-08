@@ -727,7 +727,7 @@ body.is-mobile-menu-open {
   font-family: var(--font-sans);
   font-size: var(--type-header-small-size);
   line-height: var(--type-header-small-line-height);
-  font-weight: 390;
+  font-weight: 450;
   letter-spacing: -0.02em;
   color: var(--color-base-white);
 }
@@ -924,7 +924,6 @@ body.is-mobile-menu-open {
   .faq-hero__title {
     font-size: var(--type-header-medium-size);
     line-height: var(--type-header-medium-line-height);
-    font-weight: 450;
   }
 }
 
